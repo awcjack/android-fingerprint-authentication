@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
+apply plugin: 'maven-publish'
 
 version = "1.0"     // This is the library version used when deploying the artifact
 
@@ -28,8 +28,8 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.2.1'
 }
 
-def siteUrl = 'https://github.com/multidots/android-fingerprint-authentication/'        // Homepage URL of the library
-def gitUrl = 'https://github.com/multidots/android-fingerprint-authentication.git'      // Git repository URL
+def siteUrl = 'https://github.com/awcjack/android-fingerprint-authentication/'        // Homepage URL of the library
+def gitUrl = 'https://github.com/awcjack/android-fingerprint-authentication.git'      // Git repository URL
 
 group = "com.multidots"
 
