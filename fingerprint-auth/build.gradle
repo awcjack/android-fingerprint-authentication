@@ -92,24 +92,24 @@ Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
 // https://github.com/bintray/gradle-bintray-plugin
-bintray {
-    user = properties.getProperty("bintray.user")
-    key = properties.getProperty("bintray.apikey")
+// bintray {
+//     user = properties.getProperty("bintray.user")
+//     key = properties.getProperty("bintray.apikey")
 
-    configurations = ['archives']
-    pkg {
-        repo = "md-maven"
-        // it is the name that appears in bintray when logged
-        name = "fingerprint-auth"
-        websiteUrl = siteUrl
-        vcsUrl = gitUrl
-        licenses = ["Apache-2.0"]
-        publish = true
-        version {
-            gpg {
-                sign = false //Determines whether to GPG sign the files. The default is false
-//                passphrase = properties.getProperty("bintray.gpg.password") //Optional. The passphrase for GPG signing'
-            }
-        }
-    }
-}
+//     configurations = ['archives']
+//     pkg {
+//         repo = "md-maven"
+//         // it is the name that appears in bintray when logged
+//         name = "fingerprint-auth"
+//         websiteUrl = siteUrl
+//         vcsUrl = gitUrl
+//         licenses = ["Apache-2.0"]
+//         publish = true
+//         version {
+//             gpg {
+//                 sign = false //Determines whether to GPG sign the files. The default is false
+// //                passphrase = properties.getProperty("bintray.gpg.password") //Optional. The passphrase for GPG signing'
+//             }
+//         }
+//     }
+// }
